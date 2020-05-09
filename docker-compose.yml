@@ -5,8 +5,8 @@ services:
   ports:
   - "80:80"
   environment:
-   USERNAME: diyama
-   PASSWORD: 306826
+   USERNAME: toto
+   PASSWORD: python
   volumes:
    - "./website:/var/www/html"
   depends_on:
@@ -17,6 +17,6 @@ services:
   ports :
    - "5000:5000"
   volumes:
-   - "/data:/data"
+   - "./simple_api/data:/data"
   restart: always
 
